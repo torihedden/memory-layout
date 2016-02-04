@@ -17,7 +17,8 @@ body {
 }
 
 .game-text {
-  padding: 5px 100px;
+  display: inline;
+  padding: 5px;
   border: 2px solid lightcoral;
 }
 
@@ -45,24 +46,25 @@ body {
 .all-tiles {
   /*padding: 5px;*/
   border: solid 5px blue;
-  margin: 30px
+  margin: 30px;
+  height: 600px;
 }
 
 
 .tile-row-1 {
-  padding: 50px;
+  padding: 80px;
   border: solid 2px purple;
   margin: 10px;
 }
 
 .tile-row-2 {
-  padding: 50px;
+  padding: 80px;
   border: solid 2px purple;
   margin: 10px;
 }
 
 .tile-row-3 {
-  padding: 50px;
+  padding: 80px;
   border: solid 2px purple;
   margin: 10px;
 }
@@ -71,5 +73,5 @@ body {
   display: inline;
   padding: 50px;
   border: solid 2px gray;
-  margin: 20px;
+  margin: 5px;
 }
