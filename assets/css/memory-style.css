@@ -11,9 +11,17 @@ body {
   color: white;
 }
 
-.game-name {
+h1 {
+  font-family: Orbitron, sans-serif;
+  text-align: center;
+  border: solid 1px red;
+  margin: 30px 0px;
+}
+
+
+/*.game-name {
   padding: 5px;
-  border: solid 5px red;
+  border: solid 5px gray;
   margin: 30px 200px;
   font-size: 4em;
 }
@@ -21,34 +29,34 @@ body {
 .game-text {
   display: inline;
   padding: 5px;
-  border: 2px solid lightcoral;
+  border: 2px solid gray;
   width: 35%
-}
+}*/
 
 .hearts-and-time {
   display: inline;
   padding: 10px;
-  border: 2px solid darkblue;
+  border: 2px solid gray;
   margin: 40px 30px;
 }
 
 .hearts {
   display: inline;
   padding: 5px;
-  border: solid 2px orange;
+  border: solid 2px gray;
   margin: 20px 460px 100px 5px;
 }
 
 .timer {
   display: inline;
   padding: 5px;
-  border: solid 2px green;
-  margin: 20px 5px 5px 460px;
+  border: solid 2px gray;
+  margin: 20px 5px 5px 470px;
 }
 
 .all-tiles {
   /*padding: 5px;*/
-  border: solid 5px blue;
+  border: solid 2px gray;
   margin: 30px;
   height: 600px;
 }
@@ -77,6 +85,6 @@ body {
   background: #7986cb;
   border-radius: 0.5em;
   padding: 80px;
-  border: solid 2px gray;
+  /*border: solid 2px gray;*/
   margin: 1px;
 }

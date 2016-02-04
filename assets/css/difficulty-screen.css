@@ -1,0 +1,10 @@
+html {
+  font-size: 1em;
+  /*sets standard baseline font size*/
+}
+
+body {
+  font-family: sans-serif;
+  background: #348b9e;
+  color: white;
+}
