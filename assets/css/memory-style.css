@@ -7,6 +7,8 @@ html {
 
 body {
   font-family: sans-serif;
+  background: #3f51b5;
+  color: white;
 }
 
 .game-name {
@@ -20,6 +22,7 @@ body {
   display: inline;
   padding: 5px;
   border: 2px solid lightcoral;
+  width: 35%
 }
 
 .hearts-and-time {
@@ -52,26 +55,28 @@ body {
 
 
 .tile-row-1 {
-  padding: 80px;
+  padding: 80px 0px;
   border: solid 2px purple;
   margin: 10px;
 }
 
 .tile-row-2 {
-  padding: 80px;
+  padding: 80px 0px;
   border: solid 2px purple;
   margin: 10px;
 }
 
 .tile-row-3 {
-  padding: 80px;
+  padding: 80px 0px;
   border: solid 2px purple;
   margin: 10px;
 }
 
 .tile {
   display: inline;
-  padding: 50px;
+  background: #7986cb;
+  border-radius: 0.5em;
+  padding: 80px;
   border: solid 2px gray;
-  margin: 5px;
+  margin: 1px;
 }
