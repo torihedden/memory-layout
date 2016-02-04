@@ -22,10 +22,16 @@ h2 {
   text-align: center;
 }
 
-.difficulty-button1 {
-  
+.start-page-content {
+  width: 30%;
+  margin: 20% 35%;
 }
 
-.difficulty-button2 {
-
+.difficulty-option {
+  border: solid 2px white;
+  display: block;
+  width: 25%;
+  padding: 2px;
+  text-decoration: none;
+  color: white;
 }

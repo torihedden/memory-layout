@@ -14,7 +14,7 @@ body {
 h1 {
   font-family: Orbitron, sans-serif;
   text-align: center;
-  font-size: 4em;
+  font-size: 4.5em;
   border: solid 1px red;
   margin: 30px 0px;
 }
@@ -37,21 +37,21 @@ h1 {
 .hearts-and-time {
   display: inline;
   padding: 10px;
-  border: 2px solid gray;
+  /*border: 2px solid gray;*/
   margin: 40px 30px;
 }
 
 .hearts {
   display: inline;
   padding: 5px;
-  border: solid 2px gray;
+  /*border: solid 2px gray;*/
   margin: 20px 460px 100px 5px;
 }
 
 .timer {
   display: inline;
   padding: 5px;
-  border: solid 2px gray;
+  /*border: solid 2px gray;*/
   margin: 20px 5px 5px 470px;
 }
 
