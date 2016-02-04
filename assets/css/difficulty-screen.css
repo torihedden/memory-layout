@@ -8,3 +8,24 @@ body {
   background: #348b9e;
   color: white;
 }
+
+h1 {
+  font-size: 4em;
+  border: solid 3px red;
+  font-family: Orbitron, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  border: solid 3px red;
+  text-align: center;
+}
+
+.difficulty-button1 {
+  
+}
+
+.difficulty-button2 {
+
+}
