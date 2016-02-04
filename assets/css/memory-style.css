@@ -1,0 +1,75 @@
+/*stylesheet for memory game!*/
+
+html {
+  font-size: 1em;
+  /*sets standard baseline font size*/
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.game-name {
+  padding: 5px;
+  border: solid 5px red;
+  margin: 30px 200px;
+  font-size: 4em;
+}
+
+.game-text {
+  padding: 5px 100px;
+  border: 2px solid lightcoral;
+}
+
+.hearts-and-time {
+  display: inline;
+  padding: 10px;
+  border: 2px solid darkblue;
+  margin: 40px 30px;
+}
+
+.hearts {
+  display: inline;
+  padding: 5px;
+  border: solid 2px orange;
+  margin: 20px 460px 100px 5px;
+}
+
+.timer {
+  display: inline;
+  padding: 5px;
+  border: solid 2px green;
+  margin: 20px 5px 5px 460px;
+}
+
+.all-tiles {
+  /*padding: 5px;*/
+  border: solid 5px blue;
+  margin: 30px
+}
+
+
+.tile-row-1 {
+  padding: 50px;
+  border: solid 2px purple;
+  margin: 10px;
+}
+
+.tile-row-2 {
+  padding: 50px;
+  border: solid 2px purple;
+  margin: 10px;
+}
+
+.tile-row-3 {
+  padding: 50px;
+  border: solid 2px purple;
+  margin: 10px;
+}
+
+.tile {
+  display: inline;
+  padding: 50px;
+  border: solid 2px gray;
+  margin: 20px;
+}
