@@ -44,6 +44,7 @@ input {
   display:block;
   transition: background 1s, -webkit-transform 1s;
   border-radius: 5%;
+  color: transparent;
 }
 
 .hard {
@@ -57,11 +58,54 @@ input {
 input:checked +.card {
    background: gray;
    -webkit-transform: rotateY(180deg);
+   color: white;
 }
 
 .diamond {
   position:absolute;
+  padding: 80px;
 }
+
+.camera {
+  position: absolute;
+  padding: 80px;
+}
+
+.leaf {
+  position: absolute;
+  padding: 80px;
+}
+
+.key {
+  position: absolute;
+  padding: 80px;
+}
+
+.star {
+  position: absolute;
+  padding: 80px;
+}
+
+.drop {
+  position: absolute;
+  padding: 80px;
+}
+
+.rocket {
+  position: absolute;
+  padding: 80px;
+}
+
+.bolt {
+  position: absolute;
+  padding: 80px;
+}
+
+.gear {
+  position: absolute;
+  padding: 80px;
+}
+
 
 .box {
   display: inline-block;
