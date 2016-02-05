@@ -12,7 +12,7 @@ h1 {
 }
 
 .hearts-and-time {
-  /*display: inline;*/
+  display: block;
   padding: 10px;
   /*border: 2px solid gray;*/
   margin-bottom: 40px;
@@ -27,8 +27,8 @@ h1 {
 
 .timer {
   display: inline;
-  padding: 5px;
-  margin: 20px 5px 5px 400px;
+  float: right;
+  margin-right: 40px;
 }
 
 input {
