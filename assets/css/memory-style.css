@@ -66,12 +66,6 @@ input:checked +.card {
    -webkit-transform: rotateY(180deg);
 }
 
-
-
-input:checked +.fa {
-  display:
-}
-
 .box {
   display: inline-block;
 
