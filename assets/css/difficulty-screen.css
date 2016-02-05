@@ -11,15 +11,14 @@ body {
 
 h1 {
   font-size: 4em;
-  border: solid 3px red;
   font-family: Orbitron, sans-serif;
   text-align: center;
 }
 
 h2 {
   font-size: 1.5em;
-  border: solid 3px red;
   text-align: center;
+  margin: 20px;
 }
 
 .start-page-content {
@@ -28,13 +27,25 @@ h2 {
 }
 
 .difficulty-option {
-  border: solid 2px white;
+  border: solid 5px white;
   display: block;
   width: 25%;
-  padding: 2px;
   text-decoration: none;
   color: white;
 }
+
+.easy {
+  padding: 10px 90px;
+  -webkit-transform: perspective(200px) rotateY(-15deg);
+  margin: 40px;
+}
+
+.hard {
+  padding: 10px 90px;
+  -webkit-transform: perspective(200px) rotateY(15deg);
+}
+/*Easy and hard classes styled to be tilted wedge-like "buttons"*/
+
 
 /*Changes button when hovered over*/
 a:hover {
