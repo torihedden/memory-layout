@@ -61,6 +61,10 @@ input:checked +.card {
    color: white;
 }
 
+input:checked +.card .fa{
+  transition-delay: 0.5s;
+}
+
 .diamond {
   position:absolute;
   padding: 80px;
