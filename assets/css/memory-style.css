@@ -11,6 +11,8 @@ h1 {
   margin: 30px 0px;
 }
 
+
+
 .hearts-and-time {
   /*display: inline;*/
   padding: 10px;
@@ -29,7 +31,7 @@ h1 {
   display: inline;
   padding: 5px;
   /*border: solid 2px gray;*/
-  margin: 20px 5px 5px 470px;
+  margin: 20px 5px 5px 400px;
 }
 
 input {
@@ -47,17 +49,27 @@ input {
   border-radius: 5%;
 }
 
+.card i {
+
+}
+
 .hard {
   width:98%;
   margin-right: 1%;
   margin-left: 1%;
-  width:150px;
-  height:150px;
+  width:152px;
+  height:152px;
 }
 
 input:checked +.card {
-   background: white;
+   background: gray;
    -webkit-transform: rotateY(180deg);
+}
+
+
+
+input:checked +.fa {
+  display:
 }
 
 .box {
