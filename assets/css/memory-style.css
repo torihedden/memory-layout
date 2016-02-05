@@ -15,7 +15,7 @@ h1 {
   /*display: inline;*/
   padding: 10px;
   /*border: 2px solid gray;*/
-  margin: 0px 30px;
+  margin-bottom: 40px;
 }
 
 .hearts {
@@ -41,7 +41,7 @@ input {
 .card {
   width:205px;
   height:205px;
-  background: #848484;
+  background: #7986cb;
   display:block;
   transition: background 1s, -webkit-transform 1s;
   border-radius: 5%;
