@@ -36,6 +36,7 @@ h2 {
   color: white;
 }
 
+/*Changes button when hovered over*/
 a:hover {
   background-color: white;
   color:black;
