@@ -4,32 +4,29 @@ body {
   color: white;
 }
 
+/*Links game name back to difficulty selection screen*/
 a {
   text-decoration: none;
   color: white;
-  display: inline-block;;
 }
 
 h1 {
-  display: inline-block;;
-  margin-left: 100px;
+  display: inline-block;
   font-family: Orbitron, sans-serif;
   text-align: center;
   font-size: 4.5em;
-  margin: 30px 0px;
 }
 
+/*Life Counter and Timer*/
 .hearts-and-time {
   display: block;
   padding: 10px;
-  /*border: 2px solid gray;*/
   margin-bottom: 40px;
 }
 
 .hearts {
   display: inline;
   padding: 5px;
-  /*border: solid 2px gray;*/
   margin: 20px 460px 100px 5px;
 }
 
@@ -40,11 +37,12 @@ h1 {
 }
 
 input {
-  width: 100px;
-  height: 100px;
+  width: 0px;
+  height: 0px;
   display: none;
 }
 
+/*Card Dimensions for Easy Mode*/
 .card {
   width:205px;
   height:205px;
@@ -55,6 +53,7 @@ input {
   color: transparent;
 }
 
+/*Card Styling for Hard Mode*/
 .hard {
   width:98%;
   margin-right: 1%;
@@ -63,16 +62,22 @@ input {
   height:152px;
 }
 
+/*Card Flip Animation*/
 input:checked +.card {
    background: #7986cb;
    -webkit-transform: rotateY(180deg);
    color: white;
 }
 
+/*Icon appears just after flip animation*/
 input:checked +.card .fa{
   transition-delay: 0.5s;
 }
 
+/*You can either change all of these classes for each diff. icon to "icon-easy" and "icon-hard", but I might*/
+/*need these class names for my JavaScript portion? e.g. if(icon-class-name!=icon-class-name, heartCount-=1)*/
+
+/*Icons Easy Mode*/
 .diamond {
   position:absolute;
   padding: 80px;
@@ -129,15 +134,15 @@ input:checked +.card .fa{
   margin-bottom: 1px;
 }
 
-.row1 {/*This class name should be something like "tiles area" instead of row1*/
-  width:94%;
-  margin-right:3%;
-  margin-left:3%;
+/*This fits the tiles on the page's width and re-arranges them if you change the window size*/
+.tile-area {
+  width:98%;
+  margin-right:1%;
+  margin-left:1%;
   margin-bottom: 5%;
 }
 
-/*This fits the tiles on the page and re-orders them if you change the window size*/
-
+/*Icons Hard Mode*/
 .fort {
   display: inline-block;
   padding: 51px;
@@ -217,10 +222,3 @@ input:checked +.card .fa{
   display: inline-block;
   padding: 51px;
 }
-
-.row1 {
-  width:98%;
-  margin-right:1%;
-  margin-left:1%;
-}
-/*This fits the tiles on the page and re-orders them if you change the window size*/

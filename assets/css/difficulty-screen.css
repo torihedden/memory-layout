@@ -7,11 +7,6 @@ body {
   font-family: sans-serif;
   background: #348b9e;
   color: white;
-}
-
-.whole-page {
-  width: 100%;
-  height: 100%;
   animation-name: background-color-breathe;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -32,12 +27,12 @@ h1 {
 h2 {
   font-size: 1.5em;
   text-align: center;
-  margin: 20px;
+  margin-top: 10px;
 }
 
 .start-page-content {
   width: 30%;
-  margin: 20% 35%;
+  margin: 10% 35%;
   /*-webkit-transform:;*/
   border: solid 3px gray;
   -webkit-transform: translateY(60px);
