@@ -4,7 +4,15 @@ body {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;;
+}
+
 h1 {
+  display: inline-block;;
+  margin-left: 100px;
   font-family: Orbitron, sans-serif;
   text-align: center;
   font-size: 4.5em;
@@ -110,9 +118,88 @@ input:checked +.card .fa{
   padding: 80px;
 }
 
-
 .box {
   display: inline-block;
+}
+
+.fort {
+  display: inline-block;
+  padding: 51px;
+}
+
+.anchor {
+  display: inline-block;
+  padding: 51px;
+}
+
+.bell {
+  display: inline-block;
+  padding: 51px;
+}
+
+.cake {
+  display: inline-block;
+  padding: 51px;
+}
+
+.bug {
+  display: inline-block;
+  padding: 51px;
+}
+
+.cloud {
+  display: inline-block;
+  padding: 51px;
+}
+
+.coffee {
+  display: inline-block;
+  padding: 51px;
+}
+
+.cube {
+  display: inline-block;
+  padding: 51px;
+}
+
+.flag {
+  display: inline-block;
+  padding: 51px;
+}
+
+.soccer {
+  display: inline-block;
+  padding: 51px;
+}
+
+.gamepad {
+  display: inline-block;
+  padding: 51px;
+}
+
+.home {
+  display: inline-block;
+  padding: 51px;
+}
+
+.magic {
+  display: inline-block;
+  padding: 51px;
+}
+
+.plane {
+  display: inline-block;
+  padding: 51px;
+}
+
+.tree {
+  display: inline-block;
+  padding: 51px;
+}
+
+.sun {
+  display: inline-block;
+  padding: 51px;
 }
 
 .row1 {
