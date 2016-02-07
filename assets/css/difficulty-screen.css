@@ -33,9 +33,6 @@ h2 {
 .start-page-content {
   width: 30%;
   margin: 10% 35%;
-  /*-webkit-transform:;*/
-  border: solid 3px gray;
-  -webkit-transform: translateY(60px);
 }
 
 .difficulty-option {
