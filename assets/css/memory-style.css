@@ -11,10 +11,16 @@ a {
 }
 
 h1 {
-  display: inline-block;
+  display: inline;
   font-family: Orbitron, sans-serif;
   text-align: center;
   font-size: 4.5em;
+}
+
+.game-title {
+  width: 25%;
+  margin-left: 37.5%;
+  margin-right: 37.5%;
 }
 
 /*Life Counter and Timer*/
@@ -80,7 +86,7 @@ input:checked +.card .fa{
 /*Icons Easy Mode*/
 .diamond {
   position:absolute;
-  padding: 80px;
+  padding: 77px 75px;
 }
 
 .camera {
@@ -105,7 +111,7 @@ input:checked +.card .fa{
 
 .drop {
   position: absolute;
-  padding: 80px;
+  padding: 78px 90px;
 }
 
 .rocket {
@@ -115,7 +121,7 @@ input:checked +.card .fa{
 
 .bolt {
   position: absolute;
-  padding: 80px;
+  padding: 80px 90px;
 }
 
 .gear {
@@ -165,7 +171,7 @@ input:checked +.card .fa{
 
 .bug {
   display: inline-block;
-  padding: 51px;
+  padding: 52px;
 }
 
 .cloud {
@@ -200,12 +206,12 @@ input:checked +.card .fa{
 
 .home {
   display: inline-block;
-  padding: 51px;
+  padding: 52px;
 }
 
 .magic {
   display: inline-block;
-  padding: 51px;
+  padding: 53px;
 }
 
 .plane {
@@ -215,7 +221,7 @@ input:checked +.card .fa{
 
 .tree {
   display: inline-block;
-  padding: 51px;
+  padding: 51px 54px;
 }
 
 .sun {
