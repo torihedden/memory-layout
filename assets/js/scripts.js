@@ -22,9 +22,24 @@ $(document).ready(function(){
 
   });
 
-  var gameTimer = 0;
+  var gameStart = 0;
 
-  setInterval(function(){gameTimer+=1}, 1000);//this increases the value of gameTimer by one each iteration
-  setInterval(function(){$(".timer").html(gameTimer); }, 1000);//this replaces the text in the .timer div with the current value of gameTimer
+  setInterval(function(){gameStart+=1}, 1000);//this increases the value of gameTimer by one each iteration
+
+  setInterval(function(){$(".timer").html("00:"+gameStart); }, 1000);
+
+  // if (gameStart < 10){
+  //   setInterval(function(){$(".timer").html("00:0"+gameStart); }, 1000);//this replaces the text in the .timer div with the current value of gameTimer
+  // //pad with leading zero?
+  // } else {
+  //   setInterval(function(){$(".timer").html("00:"+gameStart); }, 1000);
+  // }
+  //this worked up until a point... then I got jumps from 242 to 244, 246, 248. Second jumping.
+  //is setInterval imprecise over a longer period of time?
+  //I just checked again around 550 seconds... seems to be incrementing fine...
+
+
+  // console.log(new Date().getSeconds());
+  //will return the seconds in
 
 });

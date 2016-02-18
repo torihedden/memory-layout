@@ -46,11 +46,11 @@ h1 {
 }
 
 /*This hides the checkbox that is lurking under the label*/
-input {
+/*input {
   width: 0px;
   height: 0px;
   display: none;
-}
+}*/
 
 /*Card Dimensions for Easy Mode*/
 .card {
