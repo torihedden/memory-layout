@@ -45,6 +45,7 @@ h1 {
   margin-right: 40px;
 }
 
+/*This hides the checkbox that is lurking under the label*/
 input {
   width: 0px;
   height: 0px;
@@ -79,9 +80,10 @@ input:checked +.card {
 }
 
 /*Icon appears just after flip animation*/
-input:checked +.card .fa{
+/*input:checked +.card .fa{
   transition-delay: 0.5s;
-}
+}*/
+/*without this transition delay, the icon shows as soon as you click the card. But we are also not using the input (checkbox) being checked as the "listener" for animating the card flip*/
 
 /*You can either change all of these classes for each diff. icon to "icon-easy" and "icon-hard", but I might*/
 /*need these class names for my JavaScript portion? e.g. if(icon-class-name!=icon-class-name, heartCount-=1)*/
