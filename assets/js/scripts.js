@@ -22,7 +22,9 @@ $(document).ready(function(){
 
   });
 
-  $(".timer").append(Date())
-  // setInterval(function(){ console.log(Date()); }, 1000);
+  var gameTimer = 0;
+
+  setInterval(function(){gameTimer+=1}, 1000);//this increases the value of gameTimer by one each iteration
+  setInterval(function(){$(".timer").html(gameTimer); }, 1000);//this replaces the text in the .timer div with the current value of gameTimer
 
 });
