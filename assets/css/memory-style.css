@@ -85,6 +85,7 @@ input:checked +.card .fa{
 
 /*You can either change all of these classes for each diff. icon to "icon-easy" and "icon-hard", but I might*/
 /*need these class names for my JavaScript portion? e.g. if(icon-class-name!=icon-class-name, heartCount-=1)*/
+/*Look at my little baby Week One comments. I'm so proud of me.*/
 
 /*Icons Easy Mode*/
 .diamond {

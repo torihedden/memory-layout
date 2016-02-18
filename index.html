@@ -7,16 +7,23 @@
     <link rel="stylesheet" href="./assets/css/memory-style.css">
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   </head>
 
   <body>
 
-    <audio autoplay loop>
+  <audio autoplay loop>
     <source src="NekoAtsumeTheme.mp3" type="audio/mpeg">
-    </audio>
-    <!-- <audio>Neko Atsume theme here</audio>-->
+  </audio>
 
-  <div class="game-title"><h1><a href="difficulty-screen.html">Mem<i class="fa fa-lightbulb-o"></i>ry</a></h1></div>
+  <div class="game-title">
+    <h1>
+      <a href="difficulty-screen.html">
+        Mem<i class="fa fa-lightbulb-o"></i>ry
+      </a>
+    </h1>
+  </div>
 
   <section class="hearts-and-time">
     <div class="hearts"><i class="fa fa-heart"></i>
@@ -33,7 +40,11 @@
   <section class="tile-area">
     <div class="box-easy">
       <input type="checkbox" id="button1">
-      <label class="card" for="button1"><div class="diamond"><i class="fa fa-diamond fa-3x"></i></div></label>
+      <label class="card" for="button1">
+        <div class="diamond">
+          <i class="fa fa-diamond fa-3x"></i>
+        </div>
+      </label>
     </div>
 
       <div class="box-easy">
@@ -68,7 +79,7 @@
 
       <div class="box-easy">
         <input type="checkbox" id="button8">
-        <label class="card" for="button8"><div class="leaf"><i class="fa fa-star fa-3x"></i></div></label>
+        <label class="card" for="button8"><div class="star"><i class="fa fa-star fa-3x"></i></div></label>
       </div>
 
       <div class="box-easy">
@@ -91,38 +102,39 @@
         <label class="card" for="button12"><div class="rocket"><i class="fa fa-rocket fa-3x"></i></div></label>
       </div>
 
-      <div class="box">
+      <div class="box-easy">
         <input type="checkbox" id="button13">
         <label class="card" for="button13"><div class="camera"><i class="fa fa-camera-retro fa-3x"></i></div></label>
       </div>
 
-      <div class="box">
+      <div class="box-easy">
         <input type="checkbox" id="button14">
         <label class="card" for="button14"><div class="gear"><i class="fa fa-cog fa-3x"></i></div></label>
       </div>
 
-      <div class="box">
+      <div class="box-easy">
         <input type="checkbox" id="button15">
         <label class="card" for="button15"><div class="bolt"><i class="fa fa-bolt fa-3x"></i></div></label>
       </div>
 
-      <div class="box">
+      <div class="box-easy">
         <input type="checkbox" id="button16">
         <label class="card" for="button16"><div class="leaf"><i class="fa fa-leaf fa-3x"></i></div></label>
       </div>
 
-      <div class="box">
+      <div class="box-easy">
         <input type="checkbox" id="button17">
         <label class="card" for="button17"><div class="key"><i class="fa fa-key fa-3x"></i></div></label>
       </div>
 
-      <div class="box">
+      <div class="box-easy">
         <input type="checkbox" id="button18">
         <label class="card" for="button18"><div class="star"><i class="fa fa-star fa-3x"></i></div></label>
       </div>
 
     </section>
 
-  </body>
+    <script src="assets/js/scripts.js"></script>
 
+  </body>
 </html>
