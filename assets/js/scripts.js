@@ -6,6 +6,8 @@ $(document).ready(function(){
   var firstClass = "";  //will be used to store the class of every first, third, fifth, etc. click
 
   $(".card").click(function(){
+    //$("#to-do-list").on('change', 'input', function(){//
+    //$(document).on('click', '.card', function()//
 
     $(this).css({
       'transform': 'rotateY(180deg)',
@@ -20,12 +22,16 @@ $(document).ready(function(){
       console.log("firstClass has been set to " + firstClass )
     } else {
       if ($(this).children().hasClass(firstClass)){
-        console.log("You matched them!");//keep both flipped up
+        console.log("You matched them!");//keep both flipped up. They will stay fipped up, correctly like I want!!
         numberMatches ++
         //if (matches = numberOfTiles/2){
           //load winning screen
         //}
       } else {
+        $(".card").css({
+          'transform': 'rotateY(180deg)',
+        });//this flips every card, except for the very first one you clicked on
+
         console.log("No match!");//flip both cards back over
         console.log("You lost one life!") //(hearts -= 1)
         lifeTotal = lifeTotal - 1

@@ -4,7 +4,24 @@ body {
   color: white;
 }
 
-/*Links game name back to difficulty selection screen*/
+/*This fits the tiles on the page's width and re-arranges them if you change the window size*/
+.tile-area {
+  width:98%;
+  margin-right:1%;
+  margin-left:1%;
+  margin-bottom: 5%;
+}
+
+/*Cards - Styling for Hard Mode*/
+.hard {
+  width:98%;
+  margin-right: 1%;
+  margin-left: 1%;
+  width:152px;
+  height:152px;
+}
+
+/*Links game name back to difficulty selection screen on click*/
 a {
   text-decoration: none;
   color: white;
@@ -12,6 +29,7 @@ a {
   display: inline-block;
 }
 
+/*Memory Game title at top of game page*/
 h1 {
   display: inline-block;
   font-family: Orbitron, sans-serif;
@@ -25,6 +43,7 @@ h1 {
   margin-left: 37.5%;
   margin-right: 37.5%;
 }
+/*- - - - - - - - - - - - - - - - - - - - - */
 
 /*Life Counter and Timer*/
 .hearts-and-time {
@@ -44,6 +63,7 @@ h1 {
   float: right;
   margin-right: 40px;
 }
+/*- - - - - - - - - - - - - - - - - - - - - */
 
 /*This hides the checkbox that is lurking under the label*/
 /*input {
@@ -63,21 +83,23 @@ h1 {
   color: transparent;
 }
 
-/*Card Styling for Hard Mode*/
-.hard {
-  width:98%;
-  margin-right: 1%;
-  margin-left: 1%;
-  width:152px;
-  height:152px;
+/*Styles the tiles*/
+.box {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.box-easy {
+  display: inline-block;
+  margin-bottom: 1px;
 }
 
 /*Card Flip Animation*/
-input:checked +.card {
+/*input:checked +.card {
    background: #7986cb;
    -webkit-transform: rotateY(180deg);
    color: white;
-}
+}*/
 
 /*Icon appears just after flip animation*/
 /*input:checked +.card .fa{
@@ -89,7 +111,7 @@ input:checked +.card {
 /*need these class names for my JavaScript portion? e.g. if(icon-class-name!=icon-class-name, heartCount-=1)*/
 /*Look at my little baby Week One comments. I'm so proud of me.*/
 
-/*Icons Easy Mode*/
+/*Icon Classes Easy Mode*/
 .diamond {
   position:absolute;
   padding: 77px 75px;
@@ -135,26 +157,8 @@ input:checked +.card {
   padding: 80px;
 }
 
-/*Styles the tiles*/
-.box {
-  display: inline-block;
-  margin-bottom: 4px;
-}
 
-.box-easy {
-  display: inline-block;
-  margin-bottom: 1px;
-}
-
-/*This fits the tiles on the page's width and re-arranges them if you change the window size*/
-.tile-area {
-  width:98%;
-  margin-right:1%;
-  margin-left:1%;
-  margin-bottom: 5%;
-}
-
-/*Icons Hard Mode*/
+/*Icon Classes Hard Mode*/
 .fort {
   display: inline-block;
   padding: 51px;
