@@ -19,9 +19,14 @@ $(document).ready(function(){
     } else {
       if ($(this).children().hasClass(firstClass)){
         console.log("You matched them!");//keep both flipped up
+        //matches ++
+        //if (matches = numberOfTiles/2){
+          //load winning screen
+        //}
       } else {
-        console.log("No match!");//flip the cards back over
+        console.log("No match!");//flip both cards back over
         console.log("You lost one life!") //(hearts -= 1)
+          //if (lives = 0), load losing screen
       }
       firstClass="";
     }
