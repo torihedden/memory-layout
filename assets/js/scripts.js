@@ -33,8 +33,7 @@ $(document).ready(function(){
   });
 
 
-
-  var secondsPlayed = 0;
+  var secondsPlayed = 0;//the page loads and the seconds you have played the game = zero. Because you just started playing the game
 
   setInterval(function(){
     secondsPlayed += 0.1; //this increases the value of secondsPlayed by one each second
