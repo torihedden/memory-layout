@@ -22,11 +22,26 @@ $(document).ready(function(){
 
   });
 
-  var gameStart = 0;
+  var secondsPlayed = 0;
 
-  setInterval(function(){gameStart+=1}, 1000);//this increases the value of gameTimer by one each iteration
+  setInterval(function(){
+    secondsPlayed += 0.1; //this increases the value of secondsPlayed by one each second
+    $(".timer").html(getFormattedTime(secondsPlayed));
+  }, 100);
 
-  setInterval(function(){$(".timer").html("00:"+gameStart); }, 1000);
+  var getFormattedTime = function(seconds){
+    var minutes = Math.floor(seconds/60);
+    seconds = Math.floor(seconds % 60);
+    if (minutes < 10){
+      minutes = "0" + minutes;
+    }
+    if (seconds < 10){
+      seconds = "0" + seconds;
+    }
+    var timeFormatted = minutes + ":" + seconds;
+    return timeFormatted;
+  }
+
 
   // if (gameStart < 10){
   //   setInterval(function(){$(".timer").html("00:0"+gameStart); }, 1000);//this replaces the text in the .timer div with the current value of gameTimer
@@ -34,12 +49,12 @@ $(document).ready(function(){
   // } else {
   //   setInterval(function(){$(".timer").html("00:"+gameStart); }, 1000);
   // }
-  //this worked up until a point... then I got jumps from 242 to 244, 246, 248. Second jumping.
-  //is setInterval imprecise over a longer period of time?
-  //I just checked again around 550 seconds... seems to be incrementing fine...
+  // this worked up until a point... then I got jumps from 242 to 244, 246, 248. Second jumping.
+  // is setInterval imprecise over a longer period of time?
+  // I just checked again around 550 seconds... seems to be incrementing fine...
 
 
   // console.log(new Date().getSeconds());
-  //will return the seconds in
+  //will return the seconds according to what actual time it is. no need to round.
 
 });
