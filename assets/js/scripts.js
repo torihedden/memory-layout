@@ -4,6 +4,7 @@ $(document).ready(function(){
   var lifeTotal = 6;   //number of lives you start with
   var numberMatches = 0;//number of matches you have made
   var firstClass = "";  //will be used to store the class of every first, third, fifth, etc. click
+  // var secondClass = "";
 
   $(".card").click(function(){
     //$("#to-do-list").on('change', 'input', function(){//
@@ -17,6 +18,8 @@ $(document).ready(function(){
       'color': 'white',
     });//changes the icon white. needs a delay so the icon doesn't show up right away.
 
+    // console.log($(this).find("i").attr('class'));//this logs to the console the class of the icon, instead of the class of the div I assigned it
+
     if (firstClass === ""){
       firstClass = ($(this).children().attr('class'));
       console.log("firstClass has been set to " + firstClass )
@@ -28,9 +31,13 @@ $(document).ready(function(){
           //load winning screen
         //}
       } else {
-        $(".card").css({
+        $(this).css({
           'transform': 'rotateY(180deg)',
         });//this flips every card, except for the very first one you clicked on
+
+        $(this).children().css({
+          'color': 'red',//this is supposed to change the color of the icon to none
+        });
 
         console.log("No match!");//flip both cards back over
         console.log("You lost one life!") //(hearts -= 1)
