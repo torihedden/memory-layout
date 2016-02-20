@@ -6,6 +6,10 @@ $(document).ready(function(){
   var firstClass = "";  //will be used to store the class of every first, third, fifth, etc. click
   // var secondClass = "";
 
+  for (var i =0; i < lifeTotal; i++){
+    $(".hearts").append("<i class='fa fa-heart'></i>")//fills the life counter with # of hearts = lifeTotal
+  }
+
   $(".card").click(function(){
     //$("#to-do-list").on('change', 'input', function(){//
     //$(document).on('click', '.card', function()//
@@ -43,6 +47,11 @@ $(document).ready(function(){
         console.log("You lost one life!") //(hearts -= 1)
         lifeTotal = lifeTotal - 1
         console.log(lifeTotal + " lives remaining");
+        $(".hearts").empty();//removes all heart icons
+          for (var i = 0; i < lifeTotal; i++){
+            $(".hearts").append("<i class='fa fa-heart'></i>");//appends div class hearts w/ # of hearts = current lives
+          }
+
         if (lifeTotal === 0){
           console.log("Out of lives!");
         }
