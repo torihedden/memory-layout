@@ -65,13 +65,6 @@ h1 {
 }
 /*- - - - - - - - - - - - - - - - - - - - - */
 
-/*This hides the checkbox that is lurking under the label*/
-/*input {
-  width: 0px;
-  height: 0px;
-  display: none;
-}*/
-
 /*Card Dimensions for Easy Mode*/
 .card {
   width:205px;
@@ -94,22 +87,10 @@ h1 {
   margin-bottom: 1px;
 }
 
-/*Card Flip Animation*/
-/*input:checked +.card {
-   background: #7986cb;
-   -webkit-transform: rotateY(180deg);
-   color: white;
-}*/
-
-/*Icon appears just after flip animation*/
 /*input:checked +.card .fa{
   transition-delay: 0.5s;
 }*/
-/*without this transition delay, the icon shows as soon as you click the card. But we are also not using the input (checkbox) being checked as the "listener" for animating the card flip*/
 
-/*You can either change all of these classes for each diff. icon to "icon-easy" and "icon-hard", but I might*/
-/*need these class names for my JavaScript portion? e.g. if(icon-class-name!=icon-class-name, heartCount-=1)*/
-/*Look at my little baby Week One comments. I'm so proud of me.*/
 
 /*Icon Classes Easy Mode*/
 .diamond {
