@@ -60,7 +60,7 @@ $(document).ready(function(){
             'color': 'transparent'
           });
 
-        }, 1000, firstCard, secondCard);
+        }, 700, firstCard, secondCard);
 
 
         console.log("No match!");
@@ -72,7 +72,7 @@ $(document).ready(function(){
           }
 
         if (lifeTotal === 0){
-          console.log("You lost!");
+          //maybe put a delay before this
           $(".lose-screen").toggle();
         }
       }
