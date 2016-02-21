@@ -3,28 +3,26 @@ $(document).ready(function(){
 
   var lifeTotal = 6;   //number of lives you start with
   var numberMatches = 0;//number of matches you have made
-  var firstClass = "";  //will be used to store the class of every first, third, fifth, etc. click
+  // var firstClass = "";  //will be used to store the class of every first, third, fifth, etc. click
   // var secondClass = "";
-  var firstCard
-  var secondCard
+  var firstCard = null;
+  var secondCard = null;
 
   for (var i =0; i < lifeTotal; i++){
     $(".hearts").append("<i class='fa fa-heart'></i>")//fills the life counter with # of hearts = lifeTotal
   }
 
   $(".card").click(function(){
-    //$("#to-do-list").on('change', 'input', function(){//
-    //$(document).on('click', '.card', function()//
 
     $(this).css({
       'transform': 'rotateY(180deg)',
     });//rotates the card
 
     $(this).children().css({
-      'color': 'white',
-    });//changes the icon white. needs a delay so the icon doesn't show up right away.
+      'transition-delay': '0.3s', //it's timed so perfectly :')
+      'color': 'white'
 
-    // console.log($(this).find("i").attr('class'));//this logs to the console the class of the icon, instead of the class of the div I assigned it
+    });
 
     if (firstCard === null){ //the first time a card is clicked, firstClass will be an empty string, so set it to class of the div around the the icon. Change this later to class of icon itself.
       firstCard = $(this);
@@ -33,22 +31,14 @@ $(document).ready(function(){
       // console.log("firstClass has been set to " + firstClass )
     } else {
       secondCard = $(this);
-      console.log(secondCard);
-      // if firstCard.children().attr('class') === secondCard.children().attr('class'){
-      if ($(this).children().hasClass(firstClass)){
-        console.log("You matched them!");//keep both flipped up. They will stay fipped up, correctly like I want!!
-        numberMatches ++
-        //if (matches = numberOfTiles/2){
-          //load winning screen
-        //}
+
+      if (firstCard.children().attr('class') === (secondCard.children().attr('class'))){
+        console.log("You matched them!");//keep both flipped up. They will stay fipped up, correctly like I want!
+        numberMatches ++;
+        if (numberMatches === 9){
+          console.log("You win!");
+        }
       } else {
-        // firstCard.css({
-        //   'transform': 'rotateY(-180deg)'
-        // });
-        //
-        // secondCard.css({
-        //   'transform': 'rotateY(-180deg)'
-        // });
 
         console.log("No match!");
 
@@ -68,12 +58,9 @@ $(document).ready(function(){
       secondCard = null;
       //empty out the card variables so on the next two clicks, you can use them again for the new two cards clicked
     }
-
-    //logs the class of the div around the icon. I assigned these in week one, to help me position each icon right in the middle of the card. Some FA icons are not the exact same size, so there is a unique class for each and every icon.
-
   });
 
-//Everything below this is just for the timer
+//Everything below this is for the timer
   var secondsPlayed = 0;//the page loads and the seconds you have played the game = zero. Because you just started playing the game
 
   setInterval(function(){
