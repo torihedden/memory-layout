@@ -60,9 +60,8 @@ $(document).ready(function(){
 
         if (lifeTotal === 0){
           console.log("You lost!");
-          //if (lives = 0), load losing screen
+          $(".lose-screen").toggle();
         }
-          //if (lives = 0), load losing screen
       }
       // firstClass= "";
       firstCard = null;

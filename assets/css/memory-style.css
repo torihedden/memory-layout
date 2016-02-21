@@ -4,13 +4,27 @@ body {
   color: white;
 }
 
-/*This fits the tiles on the page's width and re-arranges them if you change the window size*/
+/*1280px= full screen on my mac*/
+/*@media (min-width: 1280px){
+  .card {
+    width: 16.6%;
+  }*/
+
+/*iPad landscape orientation*/
+/*@media (min-width: 1024px){
+  .card {
+  width: 20%;
+}
+}*/
+
+/*Container for all cards.*/
 .tile-area {
   width:98%;
   margin-right:1%;
   margin-left:1%;
   margin-bottom: 5%;
 }
+/*This might be redundant.*/
 
 /*Cards - Styling for Hard Mode*/
 /*.hard {
@@ -22,16 +36,15 @@ body {
 }*/
 
 /*Links game name back to difficulty selection screen on click*/
-a {
+.go-back {
   text-decoration: none;
   color: white;
   text-align: center;
   display: inline;
   font-family: Orbitron, sans-serif;
   font-size: 4.5em;
-  width: 28%;
-  margin-left: 36%;
-  margin-right: 36%;
+  min-width: 300px;
+
 }
 
 /*Memory Game title at top of game page*/
@@ -49,34 +62,25 @@ a {
   margin-left: 37.5%;
   margin-right: 37.5%;
 }*/
+/*This class was also redundant*/
 /*- - - - - - - - - - - - - - - - - - - - - */
 
 /*Life Counter and Timer*/
 .hearts-and-time {
   display: block;
-  padding: 10px;
+  padding: 10px 25px;
   margin-bottom: 40px;
 }
 
 .hearts {
   display: inline;
-  /*padding: 5px;*/
-  /*margin: 20px 460px 100px 5px;*/
 }
 
 .timer {
   display: inline;
   float: right;
-  margin-right: 40px;
 }
 /*- - - - - - - - - - - - - - - - - - - - - */
-
-/*This hides the checkbox that is lurking under the label*/
-/*input {
-  width: 0px;
-  height: 0px;
-  display: none;
-}*/
 
 /*Card Dimensions for Easy Mode*/
 .card {
@@ -116,6 +120,36 @@ a {
 /*You can either change all of these classes for each diff. icon to "icon-easy" and "icon-hard", but I might*/
 /*need these class names for my JavaScript portion? e.g. if(icon-class-name!=icon-class-name, heartCount-=1)*/
 /*Look at my little baby Week One comments. I'm so proud of me.*/
+
+.lose-screen {
+  padding-top: 175px;
+  padding-bottom: 200px;
+  background-color: #348b9e;
+  color: white;
+  font-size: 4.5em;
+  font-family: Orbitron, sans-serif;
+  text-align: center;
+  display: none;
+}
+
+.try-again {
+  margin-top: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 175px;
+  border: solid 5px white;
+  width: 24%;
+  margin-left: 38%;
+  margin-right: 38%;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 0.5em;
+}
 
 /*Icon Classes Easy Mode*/
 .diamond {
