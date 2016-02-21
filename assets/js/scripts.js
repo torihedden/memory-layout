@@ -31,6 +31,7 @@ $(document).ready(function(){
       // console.log("firstClass has been set to " + firstClass )
     } else {
       secondCard = $(this);
+      console.log(secondCard);
 
       if (firstCard.children().attr('class') === (secondCard.children().attr('class'))){
         console.log("You matched them!");//keep both flipped up. They will stay fipped up, correctly like I want!
@@ -39,6 +40,28 @@ $(document).ready(function(){
           console.log("You win!");
         }
       } else {
+
+        setTimeout(function(cardA, cardB) {
+          cardA.css({
+            'transform': 'rotateY(360deg)'
+          });
+
+          cardA.children().css({
+            'transition-delay': '0.3s',
+            'color': 'transparent'
+          });
+
+          cardB.css({
+            'transform': 'rotateY(360deg)'
+          });
+
+          cardB.children().css({
+            'transition-delay': '0.3s',
+            'color': 'transparent'
+          });
+
+        }, 1000, firstCard, secondCard);
+
 
         console.log("No match!");
 
