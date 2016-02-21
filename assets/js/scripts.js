@@ -34,8 +34,8 @@ $(document).ready(function(){
     } else {
       secondCard = $(this);
       console.log(secondCard);
-      if firstCard.children().attr('class') === secondCard.children().attr('class'){
-      // if ($(this).children().hasClass(firstClass)){
+      // if firstCard.children().attr('class') === secondCard.children().attr('class'){
+      if ($(this).children().hasClass(firstClass)){
         console.log("You matched them!");//keep both flipped up. They will stay fipped up, correctly like I want!!
         numberMatches ++
         //if (matches = numberOfTiles/2){
